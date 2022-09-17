@@ -1,0 +1,849 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  box-sizing: border-box;
+}
+
+/*----------- BODY --------------*/
+body {
+  display: grid;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+/*----------- HEADER --------------*/
+div.headWrapper {
+  grid-row-start: 1;
+  width: 100%;
+  background-color: #ddd;
+  border-top: 1rem solid rgb(6, 56, 10);
+}
+
+header {
+  display: grid;
+  grid-template-columns: 150px auto 44px;
+  align-items: center;
+  width: 100%;
+  background-color: #ddd;
+  max-width: 75rem;
+  margin: auto;
+}
+header img {
+  height: 75px;
+}
+header div#phone {
+  display: none;
+}
+
+div.headtext {
+  height: 6rem;
+}
+div.headtext h1, div.headtext h2 {
+  text-shadow: 1px 1px rgb(95, 167, 113);
+}
+
+/*----------- NAVIGATION --------------*/
+div.navWrapper {
+  grid-row-start: 4;
+}
+
+nav {
+  height: 100vh;
+}
+nav button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #333;
+  padding: 0.6rem;
+}
+nav ul {
+  border-bottom: 1px solid #eee;
+  list-style: none;
+  padding-left: 0;
+}
+nav ul li {
+  border-top: 1px solid #eee;
+}
+nav ul li a {
+  display: block;
+  padding: 0.9rem 2vw;
+  font-weight: 300;
+  color: #333;
+  text-decoration: none;
+  text-align: right;
+  font-weight: 400;
+}
+nav ul li a:hover {
+  color: rgb(87, 126, 115);
+}
+nav ul li.active a {
+  background-color: #d7e3e0;
+}
+
+div#hamburger a, div#closex a {
+  display: block;
+  padding: 0.8rem 2vw;
+  color: #333;
+  text-decoration: none;
+  text-align: right;
+  font-size: 2rem;
+}
+
+/* columns */
+div.flexed {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.centered {
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  padding: 0 1vw;
+}
+
+.small-1 {
+  flex-basis: 8.3333333333%;
+}
+
+.small-2 {
+  flex-basis: 16.6666666667%;
+}
+
+.small-3 {
+  flex-basis: 25%;
+}
+
+.small-4 {
+  flex-basis: 33.3333333333%;
+}
+
+.small-5 {
+  flex-basis: 41.6666666667%;
+}
+
+.small-6 {
+  flex-basis: 50%;
+}
+
+.small-7 {
+  flex-basis: 58.3333333333%;
+}
+
+.small-8 {
+  flex-basis: 66.6666666667%;
+}
+
+.small-9 {
+  flex-basis: 75%;
+}
+
+.small-10 {
+  flex-basis: 83.3333333333%;
+}
+
+.small-11 {
+  flex-basis: 91.6666666667%;
+}
+
+.small-12 {
+  flex-basis: 100%;
+}
+
+/*----------- MAIN --------------*/
+div.mainWrapper {
+  grid-row-start: 2;
+}
+
+main {
+  min-height: 10rem;
+}
+
+div.lawyercard {
+  background-color: rgb(87, 126, 115);
+  text-align: center;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+div.lawyercard img {
+  width: 100%;
+}
+
+div.lawyercard button {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  width: 90%;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  border-style: none;
+}
+
+div.lawyercard h2 {
+  height: 4rem;
+  padding-top: 1.8rem;
+}
+
+button.calltoaction {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: rgb(6, 56, 10);
+  color: white;
+  border-style: none;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  height: 8rem;
+}
+
+div.blogcard {
+  background-color: rgb(87, 126, 115);
+  margin-bottom: 1rem;
+}
+
+div.blogcard img {
+  width: 100%;
+}
+
+div.blogcard button {
+  width: 100%;
+  background-color: #ddd;
+  color: rgb(6, 56, 10);
+  border-style: none;
+  padding: 0.5rem;
+}
+
+div.blogcard h2 {
+  text-align: center;
+  color: white;
+}
+
+div.blogcard p {
+  color: white;
+  text-align: left;
+  margin: 0.9rem;
+}
+
+div.tipfaq {
+  background-color: rgb(6, 56, 10);
+  color: white;
+  margin-bottom: 1rem;
+  height: 16rem;
+}
+
+div.tipfaq h2 {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+div.tipfaq p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+div.tipfaq button {
+  background-color: #ddd;
+  color: rgb(6, 56, 10);
+  border-style: none;
+  padding: 0.5rem;
+}
+
+div.social {
+  background-color: rgb(87, 126, 115);
+  color: rgb(233, 233, 233);
+  padding: 1rem;
+  display: flex;
+  width: 100%;
+}
+
+div.social a {
+  color: rgb(231, 231, 231);
+  font-size: 3rem;
+  text-decoration: none;
+  flex-basis: 25%;
+  text-align: center;
+}
+
+div.social a:hover {
+  color: rgb(255, 255, 255);
+}
+
+div.Lbuffer {
+  display: none;
+}
+
+div.Sbuffer {
+  display: flex;
+}
+
+/*----------- FOOTER --------------*/
+div.footWrapper {
+  grid-row-start: 3;
+  background-color: #ddd;
+  width: 100%;
+}
+div.footWrapper footer {
+  padding: 0.5rem 2%;
+  text-align: center;
+  max-width: 75rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (min-width: 35rem) {
+  div.headerWrapper {
+    grid-row-start: 1;
+  }
+
+  div.navWrapper {
+    grid-row-start: 2;
+  }
+
+  div.mainWrapper {
+    grid-row-start: 3;
+  }
+
+  div.footWrapper {
+    grid-row-start: 4;
+  }
+
+  /*----------- BODY --------------*/
+  /*----------- HEADER --------------*/
+  header {
+    grid-template-columns: 150px auto auto;
+  }
+  header div#phone {
+    display: block;
+    justify-self: end;
+    padding-right: 1rem;
+  }
+  header div#phone a {
+    color: rgb(87, 126, 115);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+  header div#phone a:hover {
+    color: rgb(6, 56, 10);
+  }
+
+  /*----------- NAVIGATION --------------*/
+  nav {
+    height: auto;
+  }
+  nav ul {
+    display: flex;
+    max-width: 75rem;
+    justify-content: end;
+    border-bottom: none;
+  }
+  nav ul li {
+    border: none;
+  }
+
+  div#hamburger, div#closex {
+    display: none;
+  }
+
+  /* columns */
+  .medium-1 {
+    flex-basis: 8.3333333333%;
+  }
+
+  .medium-2 {
+    flex-basis: 16.6666666667%;
+  }
+
+  .medium-3 {
+    flex-basis: 25%;
+  }
+
+  .medium-4 {
+    flex-basis: 33.3333333333%;
+  }
+
+  .medium-5 {
+    flex-basis: 41.6666666667%;
+  }
+
+  .medium-6 {
+    flex-basis: 50%;
+  }
+
+  .medium-7 {
+    flex-basis: 58.3333333333%;
+  }
+
+  .medium-8 {
+    flex-basis: 66.6666666667%;
+  }
+
+  .medium-9 {
+    flex-basis: 75%;
+  }
+
+  .medium-10 {
+    flex-basis: 83.3333333333%;
+  }
+
+  .medium-11 {
+    flex-basis: 91.6666666667%;
+  }
+
+  .medium-12 {
+    flex-basis: 100%;
+  }
+
+  /*----------- MAIN --------------*/
+  div.Lbuffer {
+    display: none;
+  }
+
+  div.Sbuffer {
+    display: none;
+  }
+
+  /*----------- FOOTER --------------*/
+}
+/* end of media query */
+@media only screen and (min-width: 60rem) {
+  main, header, footer, nav {
+    max-width: 75rem;
+    margin: auto;
+  }
+
+  /*----------- BODY --------------*/
+  /*----------- HEADER --------------*/
+  div.headwrapper header {
+    grid-template-columns: 150px auto auto;
+  }
+
+  /*----------- NAVIGATION --------------*/
+  nav ul li a {
+    padding: 0.2rem 1rem;
+    border-radius: 10px;
+    margin: 0.5rem 0rem;
+  }
+
+  /* columns */
+  .large-1 {
+    flex-basis: 8.3333333333%;
+  }
+
+  .large-2 {
+    flex-basis: 16.6666666667%;
+  }
+
+  .large-3 {
+    flex-basis: 25%;
+  }
+
+  .large-4 {
+    flex-basis: 33.3333333333%;
+  }
+
+  .large-5 {
+    flex-basis: 41.6666666667%;
+  }
+
+  .large-6 {
+    flex-basis: 50%;
+  }
+
+  .large-7 {
+    flex-basis: 58.3333333333%;
+  }
+
+  .large-8 {
+    flex-basis: 66.6666666667%;
+  }
+
+  .large-9 {
+    flex-basis: 75%;
+  }
+
+  .large-10 {
+    flex-basis: 83.3333333333%;
+  }
+
+  .large-11 {
+    flex-basis: 91.6666666667%;
+  }
+
+  .large-12 {
+    flex-basis: 100%;
+  }
+
+  /*----------- MAIN --------------*/
+  div.Lbuffer {
+    display: flex;
+  }
+
+  div.Sbuffer {
+    display: none;
+  }
+
+  /*----------- FOOTER --------------*/
+}
+/* end of media query *//*# sourceMappingURL=styles.css.map */
