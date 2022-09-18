@@ -1,68 +1,16 @@
 
-div.headerWrapper {
-        grid-row-start: 1;
-}
-div.navWrapper {
-        grid-row-start: 2;
-}
-div.mainWrapper {
-        grid-row-start: 3;
-}
-div.footWrapper {
-        grid-row-start: 4;
-}
+
 
 /*----------- BODY --------------*/
 
 
 
 /*----------- HEADER --------------*/
-header {
-        grid-template-columns: 150px auto auto;
-        div#phone {
-                display: block;
-                justify-self: end;
-                padding-right: 1rem;
-                a {
-                        color: $maincolor;
-                        text-decoration: none;
-                        font-weight: $normalweight;
-                        font-size: 1.5rem;
-                }
-                a:hover {
-                        color: $accentcolor;
-                }
-        }
-}
 
 
 /*----------- NAVIGATION --------------*/
-nav {
-        height: auto;
-        ul {
-                display: flex;
-                max-width: 75rem;
-                justify-content: end;
-                border-bottom: none;
-                li {
-                        border: none;
-                }
-        }
-}
-div#hamburger, div#closex {
-        display: none;
-}
-/* columns */
-@for $i from 1 through 12 {
-    $w: ($i / 12) * 100%;
-    .medium-#{$i} {flex-basis: $w;}
-} // end loop
+
 /*----------- MAIN --------------*/
-div.Lbuffer {
-        display: none;
-}
-div.Sbuffer {
-        display: none;
-}
+
 /*----------- FOOTER --------------*/
     
