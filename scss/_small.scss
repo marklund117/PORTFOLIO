@@ -4,6 +4,32 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+/*---------- HEADER -------------*/
+header {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 0;
+}
+header figure img {
+  max-width: 3rem;
+}
+header div.headtext h1 {
+  font-size: 3rem;
+  font-family: $mainfont;
+  font-weight: $thinweight;
+}
+header div.headWrapper, header {
+  background-color: #222222;
+  color: #dddddd;
+}
+header div#phone {
+  font-family: $mainfont;
+  font-weight: $lightweight;
+  margin-left: 2rem;
+}
+
 
 /*----------- BODY --------------*/
 

@@ -319,6 +319,36 @@ html {
   box-sizing: border-box;
 }
 
+/*---------- HEADER -------------*/
+header {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 0;
+}
+
+header figure img {
+  max-width: 3rem;
+}
+
+header div.headtext h1 {
+  font-size: 3rem;
+  font-family: "Roboto";
+  font-weight: 100;
+}
+
+header div.headWrapper, header {
+  background-color: #222222;
+  color: #dddddd;
+}
+
+header div#phone {
+  font-family: "Roboto";
+  font-weight: 300;
+  margin-left: 2rem;
+}
+
 /*----------- BODY --------------*/
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
